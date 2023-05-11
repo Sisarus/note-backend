@@ -34,7 +34,6 @@ npm run dev
 |---------|-------------|
 | **GET** */api/notes*: | Get all notes |
 | **POST** */api/notes*: | Crete new note |
-| **GET** */api/notes*: | Get all notes |
 | **GET** */api/notes/:id*: | Get one note by id | 
 | **DELETE** */api/notes/:id*: | Delete one note by id |
 
