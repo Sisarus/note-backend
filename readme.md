@@ -30,8 +30,8 @@ npm run dev
 * Opens to [localhost](http://localhost:3001/api/notes)
 
 #### Addresses for data
-- **POST** */api/notes*: Crete new note
 - **GET** */api/notes*: Get all notes
+- **POST** */api/notes*: Create new note
 - **GET** */api/notes/:id*: Get one note by id
 - **DELETE** */api/notes/:id*: Delete one note by id
 
