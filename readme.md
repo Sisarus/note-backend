@@ -13,7 +13,7 @@ Notes list backend with note and how important that is.
 
 ## Technologies
 Project is created with:
-* [Node.js](https://nodejs.org/en))
+* [Node.js](https://nodejs.org/en)
 * [Express](https://expressjs.com/)
      - [Cors](https://expressjs.com/en/resources/middleware/cors.html)
 
