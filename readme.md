@@ -13,8 +13,8 @@ Notes list backend with note and how important that is.
 
 ## Technologies
 Project is created with:
- * Express
- * cors
+ * [Express](https://expressjs.com/)
+  * [Cors](https://expressjs.com/en/resources/middleware/cors.html)
 
 ## Setup
 To run this project, install it locally using npm:
