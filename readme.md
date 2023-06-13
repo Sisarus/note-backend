@@ -49,4 +49,11 @@ List the ready features here:
 ## Project Status
 Project is: in progress
 
-<!--complete / no longer being worked on. If you are no longer working on it, provide reasons why. -->
+<!--complete / no longer being worked on. If you are no longer working on it, provide reasons why.
+
+node --inspect index.js
+
+
+lisää dataa tietokantaan
+node mongo.js tietokantasalasana
+-->
