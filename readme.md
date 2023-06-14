@@ -1,4 +1,4 @@
-# Note Backend - Shcool project
+# Note Backend - School project
 
 [LINK TO ACTIVE PAGE](https://note-render-test.onrender.com/)
 
