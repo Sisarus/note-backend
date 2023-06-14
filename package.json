@@ -8,7 +8,8 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../note-frontend && npm run build && cp -r build ../note-backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "author": "Alisa Luomanmäki",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "mongoose": "^7.2.4"
   },
   "devDependencies": {
+    "eslint": "^8.42.0",
     "nodemon": "^2.0.22"
   }
 }

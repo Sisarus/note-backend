@@ -57,3 +57,12 @@ node --inspect index.js
 lisää dataa tietokantaan
 node mongo.js tietokantasalasana
 -->
+
+
+<!--
+
+npm install eslint --save-dev
+npx eslint --init
+npm run lint -- --fix
+
+-->
