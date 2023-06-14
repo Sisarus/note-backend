@@ -2,7 +2,7 @@
 
 [LINK TO ACTIVE PAGE](https://note-render-test.onrender.com/)
 
-[LINK TO FRONTEND CODE](https://github.com/Sisarus/note-frontend)
+[LINK TO FRONTEND CODE](https://github.com/Sisarus/note-frontend) - React
 
 ## Table of contents
 * [General info](#general-info)
