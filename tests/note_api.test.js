@@ -1,17 +1,15 @@
-const supertest = require('supertest')
 const mongoose = require('mongoose')
-const helper = require('./test_helper')
+const supertest = require('supertest')
 const app = require('../app')
+
 const api = supertest(app)
 
 const Note = require('../models/note')
+const helper = require('./test_helper')
 
 beforeEach(async () => {
   await Note.deleteMany({})
-  let noteObject = new Note(helper.initialNotes[0])
-  await noteObject.save()
-  noteObject = new Note(helper.initialNotes[1])
-  await noteObject.save()
+  await Note.insertMany(helper.initialNotes)
 })
 
 test('notes are returned as json', async () => {
@@ -42,6 +40,7 @@ test('a valid note can be added ', async () => {
     content: 'async/await simplifies making async calls',
     important: true,
   }
+
   await api
     .post('/api/notes')
     .send(newNote)
@@ -55,7 +54,6 @@ test('a valid note can be added ', async () => {
   expect(contents).toContain(
     'async/await simplifies making async calls'
   )
-
 })
 
 test('note without content is not added', async () => {
@@ -74,9 +72,9 @@ test('note without content is not added', async () => {
 })
 
 test('a specific note can be viewed', async () => {
-  const noteAtStart = await helper.notesInDb()
+  const notesAtStart = await helper.notesInDb()
 
-  const noteToView = noteAtStart[0]
+  const noteToView = notesAtStart[0]
 
   const resultNote = await api
     .get(`/api/notes/${noteToView.id}`)
@@ -87,9 +85,8 @@ test('a specific note can be viewed', async () => {
 })
 
 test('a note can be deleted', async () => {
-  const noteAtStart = await helper.notesInDb()
-
-  const noteToDelete = noteAtStart[0]
+  const notesAtStart = await helper.notesInDb()
+  const noteToDelete = notesAtStart[0]
 
   await api
     .delete(`/api/notes/${noteToDelete.id}`)
