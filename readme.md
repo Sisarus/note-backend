@@ -69,4 +69,8 @@ npm install eslint --save-dev
 npx eslint --init
 npm run lint -- --fix
 
+
+npm test -- tests/note_api.test.js
+npm test -- -t 'a specific note is within the returned notes'
+npm test -- -t 'notes'
 -->
