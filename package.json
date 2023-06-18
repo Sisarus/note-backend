@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node index.js",
-    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
     "build:ui": "rm -rf build && cd ../note-frontend && npm run build && cp -r build ../note-backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "lint": "eslint .",
@@ -14,11 +14,13 @@
   "author": "Alisa Luomanmäki",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
-    "mongoose": "^7.2.4"
+    "mongoose": "^7.2.4",
+    "mongoose-unique-validator": "^4.0.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
