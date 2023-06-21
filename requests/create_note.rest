@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0OGVkNDQzZDYwN2NjMTY2NzkzYWNhNSIsImlhdCI6MTY4NzA5NDMyNX0.wRC6a6XAgtTtXCz7bVjrjKyNaXKcfStz9G4cnH--cts
+
+{
+    "content": "Testataan toimiiko",
+    "important": true,
+    "userId": "63cbba1878b0220944af3365"
+}
