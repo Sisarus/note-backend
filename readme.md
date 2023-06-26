@@ -24,8 +24,6 @@ Project is created with:
 ## Setup
 To run this project, install it locally using npm:
 ```
-git clone https://github.com/Sisarus/note-backend.git
-cd .\note-backend
 npm install
 npm run dev
 ```
