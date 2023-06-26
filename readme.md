@@ -73,4 +73,13 @@ npm run lint -- --fix
 npm test -- tests/note_api.test.js
 npm test -- -t 'a specific note is within the returned notes'
 npm test -- -t 'notes'
+
+
+window.localStorage
+
+window.localStorage.setItem('name', 'juha tauriainen')
+window.localStorage.getItem('name')
+window.localStorage.removeItem('name')
+
+window.localStorage.clear()
 -->
